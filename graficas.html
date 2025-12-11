@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficas del Proyecto</title>
+    <style>
+        /* --- Estilos Generales --- */
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f4f9; /* Fondo gris claro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px; /* Ancho máximo para que no se estire demasiado */
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* --- Encabezado --- */
+        h1 {
+            color: #4a54e1; /* Azul vibrante para el título */
+            font-weight: 600;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* Espacio entre icono y texto */
+        }
+
+        .icon {
+            font-size: 1.2em;
+        }
+
+        /* --- Estilos de Botones --- */
+        .btn {
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        /* Botones de Gráfica (Borde Azul) */
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid #6c7ae0; /* Color del borde azul */
+            color: #6c7ae0;
+            width: 100%; /* Ocupan el ancho de su contenedor */
+        }
+
+        .btn-outline:hover {
+            background-color: #6c7ae0;
+            color: white;
+            box-shadow: 0 4px 8px rgba(108, 122, 224, 0.3);
+        }
+
+        /* Botón de Pie de Página (Fondo Azul Sólido) */
+        .btn-solid {
+            background-color: #304ffe; /* Azul más intenso y sólido */
+            border: none;
+            color: white;
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        .btn-solid:hover {
+            background-color: #1a35d6; /* Un poco más oscuro al pasar el mouse */
+            box-shadow: 0 4px 10px rgba(48, 79, 254, 0.4);
+        }
+        /* --- Estructura de Cuadrícula (Grid) --- */
+        
+        /* Contenedor principal (4 columnas) */
+        .grid-main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 20px; 
+            margin-bottom: 20px;
+        }
+        /* Hacemos que los enlaces del grid ocupen todo el espacio de la celda */
+        .grid-main a {
+            display: block;
+            width: 100%;
+        }
+
+        /* Contenedor para la última fila (3 botones centrados) */
+        .grid-last-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+        }
+
+        /* IMPORTANTE: Damos el tamaño al enlace <a>, no al botón directamente */
+        .grid-last-row a {
+          
+            width: calc(25% - 15px); 
+            display: block; /* Para que respete el ancho */
+        }
+
+        /* El botón simplemente llena el espacio del enlace */
+        .grid-last-row .btn-outline {
+            width: 100%;
+            height: 100%; /* Asegura que tengan buena altura */
+            white-space: nowrap; /* Evita que el texto se parta en dos líneas */
+        }
+
+
+        /* --- Media Query Ajustado --- */
+        @media (max-width: 768px) {
+            .grid-main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .grid-last-row {
+                flex-wrap: wrap;
+            }
+            /* En tablets, que ocupen la mitad (50%) */
+            .grid-last-row a {
+                 width: calc(50% - 10px); 
+            }
+        }
+
+        @media (max-width: 480px) {
+             .grid-main, .grid-last-row {
+                display: flex;
+                flex-direction: column; 
+            }
+            .grid-last-row a {
+                 width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><span class="icon">📊</span> Gráficas del Proyecto ConsulTIa</h1>
+
+        <div class="grid-main">
+            <a href="grafica1.html">
+            <button class="btn btn-outline">Gráfica 1</button>
+            </a>
+            <a href="grafica2.html">
+            <button class="btn btn-outline">Gráfica 2</button>
+            </a>
+            <a href="grafica3.html">
+            <button class="btn btn-outline">Gráfica 3</button>
+            </a>
+            <a href="grafica4.html">
+            <button class="btn btn-outline">Gráfica 4</button>
+            </a>
+            <a href="grafica5.html">
+            <button class="btn btn-outline">Gráfica 5</button>
+            </a>
+            <a href="grafica6.html">
+            <button class="btn btn-outline">Gráfica 6</button>
+            </a>
+            <a href="grafica7.html">
+            <button class="btn btn-outline">Gráfica 7</button>
+            </a>
+            <a href="grafica8.html">
+            <button class="btn btn-outline">Gráfica 8</button>
+            </a>
+            <a href="grafica9.html">
+            <button class="btn btn-outline">Gráfica 9</button>
+            </a>
+            <a href="grafica10.html">
+            <button class="btn btn-outline">Gráfica 10</button>
+            </a>
+            <a href="grafica11.html">
+            <button class="btn btn-outline">Gráfica 11</button>
+            </a>
+            <a href="grafica12.html">
+            <button class="btn btn-outline">Gráfica 12</button>
+            </a>
+        </div>
+
+        <div class="grid-last-row">
+            <a href="grafica13.html">
+            <button class="btn btn-outline">Gráfica 13</button>
+            </a>
+            <a href="grafica14.html">
+            <button class="btn btn-outline">Gráfica 14</button>
+            </a>
+            <a href="grafica15.html">
+            <button class="btn btn-outline">Gráfica 15</button>
+            </a>
+        </div>
+        <a href="evaluacionp3.html">
+        <button class="btn btn-solid">Regresar a Menú Principal</button></a>
+    </div>
+
+</body>
+</html>
